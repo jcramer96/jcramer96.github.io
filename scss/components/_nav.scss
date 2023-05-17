@@ -1,4 +1,6 @@
 .navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -8,7 +10,7 @@
 }
 
 .navbar-title {
-    margin: .5rem;
+    margin: .75rem;
 }
 
 .navbar-links {
@@ -34,11 +36,10 @@
     a {
         text-decoration: none;
         color: $white;
-        padding: 1rem;
         display: block;
     }   
     li a {
-        padding: .5rem 1rem;
+        padding: .5rem .25rem;
     }
     &.active {
         display: flex;

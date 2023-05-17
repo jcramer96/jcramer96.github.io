@@ -24,9 +24,9 @@
             </a>
             <div class="navbar-links">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,10 +34,19 @@
 
     <main>
         <!--JUMBOTRON-->
-        <section class="jumbotron">
-            <h2>Hi!</h2>
-            <h2>I'm Jon,</h2>
-            <h2>Front-End Developer</h2>
+        <section class="jumbotron" id="about">
+            <div class="greeting">
+                <h2>Hi!</h2>
+                <h2>I'm Jon,</h2>
+                <h2>I'm a Front-End Developer</h2>
+            </div>
+            <div class="call-to-action">
+                <button class="action-btn contact-btn" href="#contact">Contact Me</button>
+                <button class="action-btn projects-btn" href="#projects">See My Work</button>
+            </div>
+            <div class="portrait-container">
+                <img class="portrait" src="images/jc-portrait.jpg" alt="Jon Cramer" />
+            </div>
         </section>
     </main>
 	<script src="js/app.js"></script>

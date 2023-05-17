@@ -11,7 +11,7 @@
         display: flex;
         ul {
             flex-direction: row;
-            width: 30%;
+            width: 35%;
             position: absolute;
             top: 1.5rem;
             right: 1rem;
@@ -20,5 +20,46 @@
 
     h2 {
         text-align: left;
+        font-size: 1.9rem;
+        padding: 0;
+    }
+
+    .jumbotron {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-row-gap: 10px;
+        overflow-x: hidden;
+    }
+
+    .portrait {
+        width: 200px;
+        margin: 50px auto auto 5%;
+    }
+
+    .greeting {
+        grid-column: 1 / span 1;
+        margin-right: 5%;
+    }
+    
+    .portrait-container {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2;
+    }
+    
+    .call-to-action {
+        grid-column: 1 / span 1;
+        margin-right: 5%;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-bottom: 30px;
+    }
+
+    .action-btn {
+        min-width: 150px;
+    }
+
+    .projects-btn {
+        margin-left: 10%;
     }
 }
