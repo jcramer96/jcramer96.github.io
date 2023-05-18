@@ -24,12 +24,47 @@
 }
 
 .action-btn {
-    border: 1px solid $color-secondary;
-    background-color: $color-secondary;
+    border: 1px solid $color-primary;
+    background-color: $color-primary;
     color: $white;
     border-radius: 5px;
     height: 50px;
     max-width: 150px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
+}
+
+.action-btn:hover {
+    border: 1px solid $color-tertiary;
+    background-color: $color-tertiary;
+    transform: translateY(10%);
+    transition: 0.3s;
+}
+
+.project-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.code-btn,
+.site-btn {
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    background-color: $color-primary;
+    color: $white;
+    width: 150px;
+    height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.code-btn:hover,
+.site-btn:hover {
+    border: 1px solid $color-tertiary;
+    background-color: $color-tertiary;
+    transform: translateY(10%);
+    transition: 0.3s;
 }

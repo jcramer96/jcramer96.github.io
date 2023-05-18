@@ -30,6 +30,7 @@
         grid-template-rows: auto;
         grid-row-gap: 10px;
         overflow-x: hidden;
+        padding: 210px 0 150px;
     }
 
     .portrait {
@@ -57,6 +58,16 @@
 
     .action-btn {
         min-width: 150px;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-section-title {
+        grid-column: 1 / span 2;
+        margin: 35px auto 25px 50px;
+        padding: 0;
     }
 
     .projects-btn {

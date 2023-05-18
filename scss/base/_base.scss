@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-rows: 165px 230px;
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 91px;
+    padding: 160px 0 110px;
 }
 
 .greeting {
@@ -28,4 +28,25 @@ body {
 .call-to-action {
     grid-column: 2 / span 2;
     margin: auto auto auto 10px;
+}
+
+.project-container {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 30px;
+    border: 1px solid $color-secondary;
+    background-color: $color-secondary;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+}
+
+.project-card {
+    width: 90%;
+    margin: auto;
+    border: 1px solid $white;
+    background-color: $white;
+    border-radius: 10px;
 }
