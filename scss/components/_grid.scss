@@ -1,0 +1,68 @@
+.jumbotron {
+    display: grid;
+    grid-template-rows: 165px 230px;
+    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: $break-med) {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 1fr;
+        grid-row-gap: 10px;
+        overflow-x: hidden;
+    }
+}
+
+.greeting {
+    margin: auto;
+    grid-column: 1 / span 2;
+    @media (min-width: $break-med) {
+        grid-column: 1 / span 1;
+        margin-right: 5%;
+    }
+}
+
+.portrait-container {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    @media (min-width: $break-med) {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2;
+    }
+}
+
+.call-to-action {
+    grid-column: 2 / span 2;
+    margin: auto auto auto 10px;
+    @media (min-width: $break-med) {
+        grid-column: 1 / span 1;
+        margin-right: 5%;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-bottom: 30px;
+    }
+}
+
+.project-section-title {
+    @media (min-width: $break-med) {
+        grid-column: 1 / span 2;
+    }
+    @media (min-width: $break-lg) {
+        grid-column: 1 / span 3;
+    }
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    @media (min-width: $break-med) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: $break-lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}

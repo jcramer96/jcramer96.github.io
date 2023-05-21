@@ -8,3 +8,10 @@ $color-tertiary: #FF9505;
 $white: #FFFFFF;
 $grey: #857C8D;
 $light-grey: lighten(#857C8D, 30%);
+
+/* ============================================= */
+/* Screen Size Breakpoints                       */
+/* ============================================= */
+
+$break-med: 768px;
+$break-lg: 1024px;

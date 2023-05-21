@@ -7,6 +7,9 @@
     align-items: flex-start;
     background-color: $color-primary;
     color: $white;
+    @media (min-width: $break-med) {
+        flex-direction: row;
+    }
 }
 
 .navbar-title {
@@ -22,13 +25,23 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        @media (min-width: $break-med) {
+            flex-direction: row;
+            width: 35%;
+            position: absolute;
+            top: 1.5rem;
+            right: 1rem;
+        }
     }
     li {
+        font-family: 'Raleway', sans-serif;
         list-style: none;
         width: 100%;
         text-align: center;
         :hover {
-            color: $color-tertiary;
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-decoration-color: $color-tertiary;
             transform: translateY(10%);
             transition: 0.3s;
         }
@@ -43,5 +56,14 @@
     }
     &.active {
         display: flex;
+    }
+    @media (min-width: $break-med) {
+        display: flex;
+    }
+}
+
+.projects-btn {
+    @media (min-width: $break-med) {
+        margin-left: 10%;
     }
 }

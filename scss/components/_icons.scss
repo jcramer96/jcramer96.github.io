@@ -1,0 +1,11 @@
+.github,
+.linked-in {
+    fill: $color-primary;
+    margin: 0 15px;
+}
+
+.github:hover,
+.linked-in:hover {
+    fill: $color-tertiary;
+    transition: 00.3s;
+}

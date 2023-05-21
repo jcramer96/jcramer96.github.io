@@ -1,0 +1,6 @@
+@mixin button-hover {
+    border: 1px solid $color-tertiary;
+    background-color: $color-tertiary;
+    transform: translateY(10%);
+    transition: 0.3s;
+}
