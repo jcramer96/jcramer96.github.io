@@ -60,6 +60,7 @@ h3 {
 }
 
 .about-description,
+.skills-description,
 .contact-description {
     text-align: center;
     width: 90%;
@@ -67,6 +68,16 @@ h3 {
     @media (min-width: $break-lg) {
         width: 80%;
     }
+}
+
+.about-description {
+    @media (min-width: $break-med) {
+        text-align: left;
+    }
+}
+
+.skills-description {
+    margin-top: 25px;
 }
 
 .contact-form {

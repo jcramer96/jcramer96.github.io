@@ -47,8 +47,7 @@ body {
 }
 
 .contact {
-    padding-top: 50px;
-    scroll-margin-top: 150px;
+    scroll-margin-top: 0;
     @media (min-width: $break-med) {
         scroll-margin-top: 50px;
     }

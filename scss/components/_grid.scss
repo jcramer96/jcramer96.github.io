@@ -62,6 +62,32 @@
     }
 }
 
+.about {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: $break-med) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.about-title {
+    @media (min-width: $break-med) {
+        grid-column: 1 / span 2;
+    }
+}
+
+.about-description {
+    @media (min-width: $break-med) {
+        grid-column: 1 / span 1;
+    }
+}
+
+.skills-description {
+    @media (min-width: $break-med) {
+        grid-column: 2 / span 1;
+    }
+}
+
 .form-container {
     display: grid;
     grid-template-columns: 1fr;
