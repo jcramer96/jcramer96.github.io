@@ -51,6 +51,16 @@
     }
 }
 
+.project-toggle-btn {
+    margin: auto 15px auto;
+    border: none;
+    background-color: transparent;
+    &:hover {
+        transform: scale(110%);
+        fill: $color-tertiary;
+    }
+}
+
 .project-buttons {
     width: 100%;
     display: flex;

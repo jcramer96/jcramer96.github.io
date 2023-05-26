@@ -29,13 +29,17 @@ body {
         }
 }
 
-.project-container {
+.projects {
     width: 95%;
     margin: auto;
     padding-bottom: 30px;
     border: 1px solid $color-secondary;
     background-color: $color-secondary;
     border-radius: 5px;
+}
+
+.project-container li {
+    list-style: none;
 }
 
 .project-card {
@@ -46,8 +50,32 @@ body {
     border-radius: 10px;
 }
 
+.project-title-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+
+.project-details {
+    background-color: $light-grey;
+    border: 1px solid $light-grey;
+    border-radius: 0 0 10px 10px;
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+.about {
+    scroll-margin-top: 100px;
+    @media (min-width: $break-med) {
+        scroll-margin-top: 50px;
+    }
+}
+
 .contact {
-    scroll-margin-top: 0;
+    scroll-margin-top: 100px;
     @media (min-width: $break-med) {
         scroll-margin-top: 50px;
     }
