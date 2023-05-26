@@ -16,8 +16,8 @@ let projectInfoToggle = document.querySelectorAll(".project-toggle-btn");
 let projectDetails = document.querySelectorAll(".project-details");
 
 for (let i = 0; i < projectInfoToggle.length; i++) {
-    projectInfoToggle[i].addEventListener("click", () => {
-        projectInfoToggle[i].style.transform = 'rotate(180deg)';
+    projectInfoToggle[i].addEventListener("click", (e) => {
         projectDetails[i].classList.toggle('active');
+        projectInfoToggle[i].classList.toggle('active');
     })
 }

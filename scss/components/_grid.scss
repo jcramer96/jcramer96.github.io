@@ -51,6 +51,8 @@
 
 .project-container {
     display: grid;
+    position: relative;
+    z-index: 1;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 15px;
