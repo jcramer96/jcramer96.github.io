@@ -55,7 +55,7 @@
     border: none;
     background-color: transparent;
     &:hover {
-        transform: scale(110%) rotate(0deg);
+        transform: scale(1.2) rotate(0deg);
         transition: transform .3s ease;
         fill: $color-tertiary;
     }
@@ -63,7 +63,7 @@
         transform: rotate(180deg);
         transition: transform .3s ease;
         &:hover {
-            transform: scale(110%) rotate(180deg);
+            transform: scale(1.2) rotate(180deg);
             fill: $color-tertiary;
         }
     }
