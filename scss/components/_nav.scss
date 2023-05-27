@@ -38,7 +38,7 @@
     li {
         font-family: 'Raleway', sans-serif;
         list-style: none;
-        width: 100%;
+        width: 50%;
         text-align: center;
         :hover {
             text-decoration: underline;
@@ -54,7 +54,7 @@
         display: block;
     }   
     li a {
-        padding: .5rem .25rem;
+        padding: .75rem 0;
     }
     &.active {
         display: flex;
