@@ -7,16 +7,15 @@
     justify-content: space-between;
     height: 30px;
     width: 30px;
+    & .bar {
+        height: 3px;
+        width: 100%;
+        background-color: $white;
+        border-radius: 10px;
+    }
     @media (min-width: $break-med) {
             display: none;
     }
-}
-
-.toggle-btn .bar {
-    height: 3px;
-    width: 100%;
-    background-color: $white;
-    border-radius: 10px;
 }
 
 .call-to-action {

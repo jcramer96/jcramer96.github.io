@@ -23,19 +23,16 @@ body {
 }
 
 .projects {
-    scroll-margin-top: 200px;
-    @media (min-width: $break-med) {
-            scroll-margin-top: 100px;
-        }
-}
-
-.projects {
     width: 95%;
     margin: auto;
     padding-bottom: 30px;
     border: 1px solid $color-secondary;
     background-color: $color-secondary;
     border-radius: 5px;
+    scroll-margin-top: 200px;
+    @media (min-width: $break-med) {
+        scroll-margin-top: 100px;
+    }
 }
 
 .project-container li {
