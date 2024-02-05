@@ -54,15 +54,9 @@
     position: relative;
     z-index: 1;
     padding: 0;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-template-rows: auto;
     grid-row-gap: 15px;
-    @media (min-width: $break-med) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media (min-width: $break-lg) {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 .about {
